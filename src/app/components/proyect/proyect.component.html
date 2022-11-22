@@ -1,0 +1,15 @@
+<div class="expe" id="experiencia">
+  <div class="expe-header">
+    <h3 class="expe-tilte">Proyectos</h3>
+  </div>
+
+  <div class="expe-cont">
+    <a href="#" class="expe-cont-comp" *ngFor="let proyect of proyects">
+      <img [src]="proyect.img" alt="img-proyect" class="expe-comp-img">
+      <h4 class="expe-comp-tilte">{{proyect.title}}</h4>
+      <span class="expe-descript">{{proyect.des}}</span>
+    </a>
+  </div>
+
+  <a href="#" class="expe-cont-github">GitHub</a>
+</div>

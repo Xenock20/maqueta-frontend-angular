@@ -3,10 +3,36 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './components/page/home/home.component';
+import { LoginComponent } from './components/page/login/login.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { HeadComponent } from './components/head/head.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { ProyectComponent } from './components/proyect/proyect.component';
+import { EducationComponent } from './components/education/education.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { LoginformComponent } from './components/loginform/loginform.component';
+import { EditComponent } from './components/edit/edit.component';
+import { NaveditComponent } from './components/navedit/navedit.component';
+import { Pagina404Component } from './components/page/pagina404/pagina404.component';
+import { EditpageComponent } from './components/page/editpage/editpage.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    LoginComponent,
+    NavbarComponent,
+    HeadComponent,
+    SkillsComponent,
+    ProyectComponent,
+    EducationComponent,
+    FooterComponent,
+    LoginformComponent,
+    EditComponent,
+    NaveditComponent,
+    Pagina404Component,
+    EditpageComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,1 +1,381 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@100;300;400;500&display=swap');
+
+:root{
+  --font-color-primary: #1E0E62;
+  --font-color-secondary: #15143966;
+  --bg-color-primary: #FFFFFF;
+  --bg-color-secondary: #F1F1F1;
+}
+
+*{
+  font-family: 'Press Start 2P', cursive;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+.navbar-tilte{
+  color: var(--font-color-primary);
+}
+
+.navbar{
+  display: flex;
+  position: fixed;
+  background-color: var(--bg-color-primary);
+  min-width: 100vw;
+  height: 30px;
+  padding: 5px 0px;
+  justify-content: space-around;
+  z-index: 10;
+}
+
+.login-button{
+  padding: 2px;
+  text-align: center;
+  width: 75px;
+  background: #25DAC5;
+  border-radius: 100px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+  transition: all 0.2s;
+}
+
+.login-button:hover{
+  background: #20c5b2;
+}
+
+/*Home*/
+
+.home{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  position: relative;
+  top: 40px;
+  height: 600px;
+  background: var(--bg-color-secondary);
+  padding: 10px;
+  border-bottom: 1px solid #9999A7;
+}
+
+.home-text{
+  width: 250px;
+  height: 300px;
+  position: relative;
+  padding: 10px;
+  margin: auto;
+}
+
+.home-tilte{
+  position: relative;
+  top: 40px;
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--font-color-primary);
+  line-height: 60px
+}
+
+.home-info{
+  position: relative;
+  top: 60px;
+  color: var(--font-color-secondary);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.home-img{
+  position: relative;
+  margin: auto;
+  width: 250px;
+  height: 200px;
+  padding: 10px;
+}
+
+/*Skills*/
+
+.skills{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 40px;
+  height: 1600px;
+  background-color: var(--bg-color-secondary);
+}
+
+.skills-info{
+  height: 100px;
+  width: 75%;
+  margin: 40px auto;
+}
+
+.skills-tilte{
+  color: var(--font-color-primary);
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 28px;
+  padding: 10px;
+}
+
+.skills-info{
+  color: var(--font-color-secondary);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.skills-cont{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 10px;
+  padding: 10px;
+  margin: 40px auto;
+  width: 75%;
+}
+
+.skills-component{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin:  0 auto;
+  width: 230px;
+  height: 250px;
+}
+
+.skills-component > i:hover{
+  transform: scale(1.2);
+}
+
+.skills-component > i {
+  font-size: 5rem;
+  padding: 5px;
+  transition: all 0.2s;
+}
+
+.skills-comp-info{
+  padding: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--font-color-primary);
+}
+
+.fa-html5:hover{
+  color: orange;
+}
+
+.fa-css3-alt:hover{
+  color: cornflowerblue;
+}
+
+.fa-js:hover{
+  color: rgb(182, 182, 2);
+}
+
+.fa-angular:hover{
+  color: red;
+}
+
+.fa-java:hover{
+  color: rgb(167, 1, 1);
+}
+
+/*Experiencias/Proyectos*/
+
+.expe{
+  position: relative;
+  background-color: var(--bg-color-primary);
+  height: 2500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.expe-header{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 75%;
+  margin: auto;
+}
+
+.expe-tilte{
+  color: var(--font-color-primary);
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 28px;
+}
+
+.expe-comp-img{
+  width: 250px;
+}
+
+.expe-cont-comp:hover{
+  transform: scale(1.1);
+}
+
+.expe-cont-github{
+  text-align: center;
+  padding: 15px 0;
+  width: 200px;
+  margin: 25px auto;
+  background: #25DAC5;
+  border-radius: 100px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.expe-cont{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+  padding: 10px;
+  margin: 40px auto;
+  width: 75%;
+}
+
+.expe-cont-comp{
+  padding: 10px 0px;
+  transition: all 0.2s;
+}
+
+.expe-comp-tilte{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: var(--font-color-primary);
+}
+
+.expe-descript{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--font-color-secondary);
+}
+
+/*Footer*/
+
+footer{
+  position: relative;
+  background-color: var(--bg-color-secondary);
+  text-align: center;
+  padding: 25% 0px;
+  font-size: 1.2rem;
+}
+
+.link-icon{
+  padding: 20px 0px;
+}
+
+.contact-link-icon{
+  margin: 20px;
+}
+
+.contact-link-icon > i{
+  color: #9999A7;
+  transition: all 0.2s;
+}
+
+.contact-link-icon:hover > i{
+  color: var(--font-color-primary);
+}
+
+/*Media Query*/
+
+@media (min-width: 590px) {
+  .home{
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+  }
+
+  .expe{
+    height: 2200px;
+  }
+
+  .skills{
+    height: 1000px;
+  }
+}
+
+@media (min-width: 680px) {
+  .expe{
+    height: 1500px;
+  }
+
+  footer{
+    padding: 15% 0px;
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .expe{
+    height: 1200px;
+  }
+
+  footer{
+    padding: 10% 0px;
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1300px) {
+
+  .expe-cont{
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+  }
+
+  .expe-comp-img{
+    width: 350px;
+  }
+
+  .expe-cont-comp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .expe-descript{
+    padding: 0 50px ;
+  }
+
+  .home{
+    border: none;
+  }
+
+  .skills-tilte{
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 28px;
+    padding: 10px;
+  }
+
+  .home-text{
+    width: 350px;
+  }
+
+  .home-tilte{
+    font-size: 38px;
+  }
+
+  .home-info{
+    font-size: 18px;
+  }
+}
+
