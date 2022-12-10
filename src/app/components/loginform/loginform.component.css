@@ -1,11 +1,11 @@
 span{
+  width: 100%;
   padding: 20px 0;
   font-size: 30px;
   color: #1E0E62;
   line-height: 1.2;
   text-transform: uppercase;
   text-align: center;
-  width: 100%;
   display: block;
 }
 
@@ -20,19 +20,19 @@ a{
 }
 
 form{
-  width: 350px;
+  width: 300px;
   background: #fff;
   border-radius: 10px;
   position: relative;
 }
 
 input{
-  color: #15143966;
+  color: black;
   margin: 10px auto;
   line-height: 1.2;
   font-size: 18px;
   display: block;
-  width: 75%;
+  width: 200px;
   background: 0 0;
   height: 62px;
   padding: 0 20px 0 38px;
@@ -55,13 +55,14 @@ button{
   justify-content: center;
   align-items: center;
   padding: 0 20px;
-  width: 100%;
+  width: 260px;
   height: 62px;
   background-color: #25DAC5;
   border-radius: 3px;
   outline: none!important;
   border: none;
   transition: all 0.2s;
+  margin: 0 auto;
 }
 
 button:hover{
