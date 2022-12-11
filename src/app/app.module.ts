@@ -16,6 +16,9 @@ import { EditComponent } from './components/edit/edit.component';
 import { NaveditComponent } from './components/navedit/navedit.component';
 import { Pagina404Component } from './components/page/pagina404/pagina404.component';
 import { EditpageComponent } from './components/page/editpage/editpage.component';
+import { ExperinceComponent } from './components/experince/experince.component';
+import { ImagenComponent } from './components/imagen/imagen.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +36,9 @@ import { EditpageComponent } from './components/page/editpage/editpage.component
     NaveditComponent,
     Pagina404Component,
     EditpageComponent,
+    ExperinceComponent,
+    ImagenComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
