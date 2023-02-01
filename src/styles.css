@@ -17,8 +17,14 @@
 
 html{
   scroll-behavior: smooth;
+  /*filter: invert(100%);*/
 }
 
+/*
+html img{
+  filter: invert(100%);
+}
+*/
 ul{
   list-style: none;
 }
@@ -112,7 +118,6 @@ a{
   text-align: center;
   display: flex;
   flex-direction: column;
-  position: relative;
   top: 40px;
   height: 1600px;
   background-color: var(--bg-color-secondary);
@@ -127,7 +132,7 @@ a{
 .skills-tilte{
   color: var(--font-color-primary);
   font-weight: 500;
-  font-size: 28px;
+  font-size: 32px;
   line-height: 28px;
   padding: 10px;
 }
@@ -164,7 +169,7 @@ a{
 }
 
 .skills-component > i {
-  font-size: 5rem;
+  font-size: 7rem;
   padding: 5px;
   transition: all 0.2s;
 }
@@ -217,7 +222,7 @@ a{
 .expe-tilte{
   color: var(--font-color-primary);
   font-weight: 500;
-  font-size: 28px;
+  font-size: 48px;
   line-height: 28px;
 }
 
@@ -361,7 +366,7 @@ footer{
 
   .skills-tilte{
     font-weight: 500;
-    font-size: 38px;
+    font-size: 48px;
     line-height: 28px;
     padding: 10px;
   }
