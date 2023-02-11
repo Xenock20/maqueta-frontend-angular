@@ -9,7 +9,7 @@ export class EducationComponent implements OnInit {
 
   constructor() { }
 
-  prueba : String[] = ["", "", "", ""];
+  prueba : String[] = ["", "", ""];
 
   ngOnInit(): void {
   }

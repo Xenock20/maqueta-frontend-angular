@@ -75,7 +75,6 @@ a{
   height: 600px;
   background: var(--bg-color-secondary);
   padding: 10px;
-  border-bottom: 1px solid #9999A7;
 }
 
 .home-text{
@@ -90,7 +89,7 @@ a{
   position: relative;
   top: 40px;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 38px;
   color: var(--font-color-primary);
   line-height: 60px
 }
@@ -119,7 +118,6 @@ a{
   display: flex;
   flex-direction: column;
   top: 40px;
-  height: 1600px;
   background-color: var(--bg-color-secondary);
 }
 
@@ -132,9 +130,10 @@ a{
 .skills-tilte{
   color: var(--font-color-primary);
   font-weight: 500;
-  font-size: 32px;
+  font-size: 48px;
   line-height: 28px;
-  padding: 10px;
+  padding-top: 50px;
+  border-top: 1px solid var(--font-color-secondary);
 }
 
 .skills-info{
@@ -142,6 +141,7 @@ a{
   font-weight: 500;
   font-size: 16px;
   line-height: 32px;
+
 }
 
 .skills-cont{
@@ -312,10 +312,6 @@ footer{
   .expe{
     height: 2200px;
   }
-
-  .skills{
-    height: 1000px;
-  }
 }
 
 @media (min-width: 680px) {
@@ -326,6 +322,19 @@ footer{
   footer{
     padding: 15% 0px;
     font-size: 1.2rem;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .home-tilte{
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 425px) {
+  .skills-tilte{
+    font-size: 28px;
   }
 }
 
@@ -366,21 +375,12 @@ footer{
 
   .skills-tilte{
     font-weight: 500;
-    font-size: 48px;
     line-height: 28px;
-    padding: 10px;
   }
 
   .home-text{
     width: 350px;
   }
 
-  .home-tilte{
-    font-size: 38px;
-  }
-
-  .home-info{
-    font-size: 18px;
-  }
 }
 
