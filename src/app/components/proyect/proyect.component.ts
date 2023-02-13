@@ -12,32 +12,32 @@ export class ProyectComponent implements OnInit {
   proyects:any[] = [
     {
       img: "https://astelus.com/wp-content/viajes/Lago-Moraine-Parque-Nacional-Banff-Alberta-Canada.jpg",
-      title: "Trabajo Real #1",
+      title: "Nombre del proyecto",
       des: "Descripcion del proyecto y con que tecnologia se trabajo o que empresa se trabajo"
     },
     {
       img: "https://astelus.com/wp-content/viajes/Lago-Moraine-Parque-Nacional-Banff-Alberta-Canada.jpg",
-      title: "Trabajo Real #1",
+      title: "Nombre del proyecto",
       des: "Descripcion del proyecto y con que tecnologia se trabajo o que empresa se trabajo"
     },
     {
       img: "https://astelus.com/wp-content/viajes/Lago-Moraine-Parque-Nacional-Banff-Alberta-Canada.jpg",
-      title: "Trabajo Real #1",
+      title: "Nombre del proyecto",
       des: "Descripcion del proyecto y con que tecnologia se trabajo o que empresa se trabajo"
     },
     {
       img: "https://astelus.com/wp-content/viajes/Lago-Moraine-Parque-Nacional-Banff-Alberta-Canada.jpg",
-      title: "Trabajo Real #1",
+      title: "Nombre del proyecto",
       des: "Descripcion del proyecto y con que tecnologia se trabajo o que empresa se trabajo"
     },
     {
       img: "https://astelus.com/wp-content/viajes/Lago-Moraine-Parque-Nacional-Banff-Alberta-Canada.jpg",
-      title: "Trabajo Real #1",
+      title: "Nombre del proyecto",
       des: "Descripcion del proyecto y con que tecnologia se trabajo o que empresa se trabajo"
     },
     {
       img: "https://astelus.com/wp-content/viajes/Lago-Moraine-Parque-Nacional-Banff-Alberta-Canada.jpg",
-      title: "Trabajo Real #1",
+      title: "Nombre del proyecto",
       des: "Descripcion del proyecto y con que tecnologia se trabajo o que empresa se trabajo"
     }
   ];

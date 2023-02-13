@@ -1,0 +1,23 @@
+.expe-btn{
+  margin: 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn{
+  margin: 5px;
+  text-align: center;
+  padding: 5px;
+  width: 100px;
+  border-radius: 25px;
+  color: white;
+}
+
+.btn-demo{
+  background-color: var(--font-color-primary);
+}
+
+.btn-code{
+  background-color: #25DAC5;
+}

@@ -9,6 +9,8 @@ export class ExperinceComponent implements OnInit {
 
   constructor() { }
 
+  prueba : String[] = ["", "", ""];
+
   ngOnInit(): void {
   }
 

@@ -4,11 +4,15 @@
   </div>
 
   <div class="expe-cont">
-    <a href="#" class="expe-cont-comp" *ngFor="let proyect of proyects">
+    <div class="expe-cont-comp" *ngFor="let proyect of proyects">
       <img [src]="proyect.img" alt="img-proyect" class="expe-comp-img">
       <h4 class="expe-comp-tilte">{{proyect.title}}</h4>
       <span class="expe-descript">{{proyect.des}}</span>
-    </a>
+      <div class="expe-btn">
+        <a href="#" class="btn btn-demo">Demo</a>
+        <a href="#" class="btn btn-code">Code</a>
+      </div>
+    </div>
   </div>
 
   <a href="#" class="expe-cont-github">GitHub</a>

@@ -1,0 +1,36 @@
+.experince{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+  background-color: var(--bg-color-secondary);
+}
+
+.expe-title{
+  font-size: 48px;
+  font-weight: 500;
+  color: var(--font-color-primary);
+}
+
+@media (max-width: 425px) {
+  .expe-title{
+    font-size: 28px;
+  }
+}
+
+.grid-expe{
+  padding: 10px;
+}
+
+.cont-expe{
+  padding: 5px;
+  margin-top: 10px;
+  border-bottom: 2px solid var(--font-color-primary);
+}
+
+@media (min-width: 768px) {
+  .grid-expe{
+    width: 50%;
+  }
+}
+
