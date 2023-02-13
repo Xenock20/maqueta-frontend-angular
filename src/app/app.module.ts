@@ -19,6 +19,12 @@ import { EditpageComponent } from './components/page/editpage/editpage.component
 import { ExperinceComponent } from './components/experince/experince.component';
 import { ImagenComponent } from './components/imagen/imagen.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { EditHomeComponent } from './components/edit-home/edit-home.component';
+import { EditSkillComponent } from './components/edit-skill/edit-skill.component';
+import { EditEduComponent } from './components/edit-edu/edit-edu.component';
+import { EditExpeComponent } from './components/edit-expe/edit-expe.component';
+import { EditProjectComponent } from './components/edit-project/edit-project.component';
+import { EditContactComponent } from './components/edit-contact/edit-contact.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +45,12 @@ import { ContactComponent } from './components/contact/contact.component';
     ExperinceComponent,
     ImagenComponent,
     ContactComponent,
+    EditHomeComponent,
+    EditSkillComponent,
+    EditEduComponent,
+    EditExpeComponent,
+    EditProjectComponent,
+    EditContactComponent,
   ],
   imports: [
     BrowserModule,
