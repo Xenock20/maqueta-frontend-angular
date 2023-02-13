@@ -1,8 +1,6 @@
 .expe-btn{
-  margin: 20px 0px;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .btn{
@@ -12,12 +10,25 @@
   width: 100px;
   border-radius: 25px;
   color: white;
+  transition: all 0.2s;
 }
 
 .btn-demo{
-  background-color: var(--font-color-primary);
+  border: 1px solid var(--font-color-primary);
+  color: var(--font-color-primary);
 }
 
 .btn-code{
-  background-color: #25DAC5;
+  border: 1px solid #21c2af;
+  color: #21c2af;
+}
+
+.btn-demo:hover{
+  background-color: var(--font-color-primary);
+  color: white;
+}
+
+.btn-code:hover{
+  background-color: #21c2af;
+  color: white;
 }
