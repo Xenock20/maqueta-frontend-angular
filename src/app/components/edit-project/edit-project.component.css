@@ -1,0 +1,31 @@
+.edit-project{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.btn-add-img{
+  position: relative;
+  padding: 11px 16px;
+  font-size: 15px;
+  line-height: 1.5;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #5B8FB9;
+  border: 0;
+  transition: 0.2s;
+  overflow: hidden;
+}
+
+input[type = "file"]{
+  cursor: pointer;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  transform: scale(3);
+  opacity: 0;
+}
+
+.btn-add-img:hover{
+  background-color: #4e7ba0;
+}
