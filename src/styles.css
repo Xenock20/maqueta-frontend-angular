@@ -323,14 +323,14 @@ footer{
   line-height: 1.5;
   border-radius: 3px;
   color: #fff;
-  background-color: #5B8FB9;
+  background-color: #71b95b;
   border: 0;
   transition: 0.2s;
   overflow: hidden;
 }
 
 .add:hover{
-  background-color: #4e7ba0;
+  background-color: #4ea04e;
 }
 
 h3{
