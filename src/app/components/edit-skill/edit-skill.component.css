@@ -3,3 +3,19 @@
   flex-direction: column;
   margin-bottom: 20px;
 }
+
+h4{
+  text-align: center;
+}
+
+.skillbox{
+  width: 200px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-control-skill{
+  display: flex;
+  flex-direction: column;
+}
