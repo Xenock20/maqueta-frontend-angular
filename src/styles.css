@@ -314,6 +314,25 @@ footer{
 }
 
 /*Page Edit*/
+.add{
+  margin: 0 auto;
+  width: 200px;
+  position: relative;
+  padding: 11px 16px;
+  font-size: 15px;
+  line-height: 1.5;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #5B8FB9;
+  border: 0;
+  transition: 0.2s;
+  overflow: hidden;
+}
+
+.add:hover{
+  background-color: #4e7ba0;
+}
+
 h3{
   text-align: center;
   font-size: 32px;
