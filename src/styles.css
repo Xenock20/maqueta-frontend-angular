@@ -314,6 +314,35 @@ footer{
 }
 
 /*Page Edit*/
+.edit-list-cont{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.btn-form-edit{
+  width: 50%;
+  height: 30px;
+  border: none;
+  color: white;
+  border-radius: 2px;
+  font-size: 16px;
+}
+
+.btn-delet{
+  background-color: red;
+}
+
+.btn-edit{
+  background-color: rgb(255, 217, 0);
+}
+
+.edit-item-edit{
+  background-color: #301E67;
+  padding: 4px;
+  border-radius: 5px;
+  margin: 4px 0px;
+}
+
 .add{
   margin: 0 auto;
   width: 200px;

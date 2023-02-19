@@ -9,6 +9,8 @@ export class EditExpeComponent implements OnInit {
 
   constructor() { }
 
+  list = ["","",""];
+
   ngOnInit(): void {
   }
 

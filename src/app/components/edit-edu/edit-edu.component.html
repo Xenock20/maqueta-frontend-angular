@@ -2,15 +2,22 @@
   <div class="edit-edu">
     <h3>Educacion</h3>
 
-    <!--
-  <div class="edu-cont">
-    <div class="edu-item-edit">
-      <h5 class="edu-title-edit">Instituto Jose Hernandez / Primario</h5>
-      <span class="edu-date-edit">2010 - 2016</span>
-      <p class="edu-ubi-edit">B1761MPV, Constancio Vigil 3000-3198, B1761MPV Merlo, Provincia de Buenos Aires</p>
+    <div class="edit-list-cont">
+      <div class="edit-item-edit" *ngFor="let i of list">
+        <h5 class="item-title-edit">Instituto Jose Hernandez / Primario</h5>
+        <span class="item-date-edit">2010 - 2016</span>
+        <p class="item-ubi-edit">
+          B1761MPV, Constancio Vigil 3000-3198, B1761MPV Merlo, Provincia de
+          Buenos Aires
+        </p>
+        <div>
+          <button type="button" class="btn-form-edit btn-delet">
+            Eliminar
+          </button>
+          <button type="button" class="btn-form-edit btn-edit">Editar</button>
+        </div>
+      </div>
     </div>
-  </div>
-  -->
 
     <div class="form-control">
       <label for="edir-edu-title">Titulo y Educacion</label>

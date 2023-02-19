@@ -2,6 +2,24 @@
   <div class="edit-expe">
     <h3>Experiencias</h3>
 
+    <div class="edit-list-cont">
+      <div class="edit-item-edit" *ngFor="let i of list">
+        <h5 class="item-title-edit">Desarrollador Backend Node.js</h5>
+        <span class="item-date-edit">Mayo - 2022 / Julio - 2022</span>
+        <p class="item-ubi-edit">
+          Colaboré como desarrollador backend en un equipo sobre un proyecto de
+          un E-commerce con la metodología Scrum bajo el lenguaje de JavaScript
+          con la librería Express.
+        </p>
+        <div>
+          <button type="button" class="btn-form-edit btn-delet">
+            Eliminar
+          </button>
+          <button type="button" class="btn-form-edit btn-edit">Editar</button>
+        </div>
+      </div>
+    </div>
+
     <div class="form-control">
       <label for="edir-exp-title">Titulo de la Experiencia</label>
       <input type="text" name="edir-exp-title" id="edir-exp-title" />
