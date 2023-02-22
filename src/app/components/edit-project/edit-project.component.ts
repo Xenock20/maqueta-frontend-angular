@@ -9,6 +9,8 @@ export class EditProjectComponent implements OnInit {
 
   constructor() { }
 
+  list = ["", "", ""];
+
   ngOnInit(): void {
   }
 

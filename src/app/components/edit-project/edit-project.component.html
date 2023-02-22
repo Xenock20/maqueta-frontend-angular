@@ -2,6 +2,24 @@
   <div class="edit-project">
     <h3>Projectos</h3>
 
+    <div class="edit-list-cont project-edit-grid">
+      <div class="edit-item-edit project-edit-box" *ngFor="let i of list">
+        <h5 class="item-title-edit">Desarrollador Backend Node.js</h5>
+        <img class="item-img-edit" src="../../../assets/img/project.jpg">
+        <p class="item-ubi-edit">
+          Colaboré como desarrollador backend en un equipo sobre un proyecto de
+          un E-commerce con la metodología Scrum bajo el lenguaje de JavaScript
+          con la librería Express.
+        </p>
+        <div>
+          <button type="button" class="btn-form-edit btn-delet">
+            Eliminar
+          </button>
+          <button type="button" class="btn-form-edit btn-edit">Editar</button>
+        </div>
+      </div>
+    </div>
+
     <div class="form-control">
       <p>Imagen del projecto</p>
       <div class="btn-add-img">

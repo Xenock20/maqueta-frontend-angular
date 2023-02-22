@@ -17,6 +17,17 @@
   overflow: hidden;
 }
 
+.project-edit-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.project-edit-box{
+  width: 100%;
+  max-width: 400px;
+}
+
 input[type = "file"]{
   cursor: pointer;
   position: absolute;
@@ -28,4 +39,9 @@ input[type = "file"]{
 
 .btn-add-img:hover{
   background-color: #4e7ba0;
+}
+
+.item-img-edit{
+  margin: 5px 0px;
+  width: 100%;
 }
