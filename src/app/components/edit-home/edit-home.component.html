@@ -1,29 +1,29 @@
-<form>
+<form (ngSubmit)="onSubmit()" #form="ngForm">
   <div class="edit-home">
     <h3>Inicio</h3>
     <div class="form-control">
       <label for="name">Nombre Completo</label>
-      <input type="text" name="name" id="name" />
+      <input type="text" name="name" id="name" [(ngModel)]="name" required/>
     </div>
 
     <div class="form-control">
       <label for="title-home">Titulo Principal</label>
-      <input type="text" name="title-home" id="titleHome" />
+      <input type="text" name="title-home" id="titleHome" [(ngModel)]="tituloHome" required/>
     </div>
 
     <div class="form-control">
       <label for="des-home">Descripcion Principal</label>
-      <textarea name="des-home" id="des-home" cols="30" rows="10"></textarea>
+      <textarea name="des-home" id="des-home" cols="30" rows="10" [(ngModel)]="desHome" required></textarea>
     </div>
 
     <div class="form-control">
       <p>Imagen Principal</p>
       <div class="btn-add-img">
         <label for="img-home" class="text-img">Agregar Imagen</label>
-        <input type="file" name="img-home" id="img-home" />
+        <input type="file" name="img-home" id="img-home" (change)="onFileSelected($event)" required/>
       </div>
     </div>
 
-    <button type="button" class="add">Guardar</button>
+    <button type="submit" class="add" [disabled]="!form.valid">Guardar</button>
   </div>
 </form>

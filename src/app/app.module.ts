@@ -25,6 +25,7 @@ import { EditEduComponent } from './components/edit-edu/edit-edu.component';
 import { EditExpeComponent } from './components/edit-expe/edit-expe.component';
 import { EditProjectComponent } from './components/edit-project/edit-project.component';
 import { EditContactComponent } from './components/edit-contact/edit-contact.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import { EditContactComponent } from './components/edit-contact/edit-contact.com
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
