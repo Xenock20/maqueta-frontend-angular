@@ -1,16 +1,12 @@
-<form>
+<form form (ngSubmit)="onSubmit()" #form="ngForm">
   <div class="edit-expe">
     <h3>Experiencias</h3>
 
     <div class="edit-list-cont">
       <div class="edit-item-edit" *ngFor="let i of list">
-        <h5 class="item-title-edit">Desarrollador Backend Node.js</h5>
-        <span class="item-date-edit">Mayo - 2022 / Julio - 2022</span>
-        <p class="item-ubi-edit">
-          Colaboré como desarrollador backend en un equipo sobre un proyecto de
-          un E-commerce con la metodología Scrum bajo el lenguaje de JavaScript
-          con la librería Express.
-        </p>
+        <h5 class="item-title-edit">{{i.titulo}}</h5>
+        <span class="item-date-edit">{{i.fechaInicio}} - {{i.fechaFinal}}</span>
+        <p class="item-ubi-edit">{{i.descrip}}</p>
         <div>
           <button type="button" class="btn-form-edit btn-delet">
             Eliminar
@@ -22,17 +18,17 @@
 
     <div class="form-control">
       <label for="edir-exp-title">Titulo de la Experiencia</label>
-      <input type="text" name="edir-exp-title" id="edir-exp-title" />
+      <input type="text" name="edir-exp-title" id="edir-exp-title" [(ngModel)]="edirExpTitle" required/>
     </div>
 
     <div class="form-control">
       <label for="edir-exp-date-init">Fecha de Inicio</label>
-      <input type="date" name="edir-exp-date-init" id="edir-exp-date-init" />
+      <input type="date" name="edir-exp-date-init" id="edir-exp-date-init" [(ngModel)]="fechaInicio" required />
     </div>
 
     <div class="form-control">
       <label for="edir-exp-date-fin">Fecha de Finalizacion</label>
-      <input type="date" name="edir-exp-date-fin" id="edir-exp-date-fin" />
+      <input type="date" name="edir-exp-date-fin" id="edir-exp-date-fin" [(ngModel)]="fechaFin" required/>
     </div>
 
     <div class="form-control">
@@ -42,9 +38,10 @@
         id="edir-exp-des"
         cols="30"
         rows="10"
+        [(ngModel)]="edirExpDes" required
       ></textarea>
     </div>
 
-    <button type="button" class="add">Agregar</button>
+    <button type="submit" class="add" [disabled]="!form.valid">Agregar</button>
   </div>
 </form>

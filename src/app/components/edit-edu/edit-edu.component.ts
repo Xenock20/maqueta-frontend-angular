@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { education } from 'src/app/models/education';
+import { education } from 'src/app/models/models';
 
 @Component({
   selector: 'app-edit-edu',
