@@ -1,4 +1,4 @@
-<form>
+<form (ngSubmit)="onSubmit()" #form="ngForm">
   <div class="edit-skill">
     <h3>Habilidades</h3>
     <div class="form-control">
@@ -8,41 +8,13 @@
     <div class="form-control-skill">
       <h4>Conocimiento en</h4>
 
-      <div class="skillbox">
-        <label for="des-html">HTML</label>
-        <input type="checkbox" name="des-html" id="des-html" />
+      <div class="skillbox" *ngFor="let item of items">
+        <label for="{{item.value}}">{{item.label}}</label>
+        <input type="checkbox" id="{{item.value}}" name="{{item.value}}" [(ngModel)]="item.checked">
       </div>
 
-      <div class="skillbox">
-        <label for="des-css">CSS</label>
-        <input type="checkbox" name="des-css" id="des-css" />
-      </div>
-      <div class="skillbox">
-        <label for="des-js">JavaScript</label>
-        <input type="checkbox" name="des-js" id="des-js" />
-      </div>
-      <div class="skillbox">
-        <label for="des-jv">Java</label>
-        <input type="checkbox" name="des-jv" id="des-jv" />
-      </div>
-      <div class="skillbox">
-        <label for="des-angular">Angular</label>
-        <input type="checkbox" name="des-angular" id="des-angular" />
-      </div>
-      <div class="skillbox">
-        <label for="des-react">React</label>
-        <input type="checkbox" name="des-react" id="des-react" />
-      </div>
-      <div class="skillbox">
-        <label for="des-py">Python</label>
-        <input type="checkbox" name="des-py" id="des-py" />
-      </div>
-      <div class="skillbox">
-        <label for="des-db">Data Base</label>
-        <input type="checkbox" name="des-db" id="des-db" />
-      </div>
     </div>
 
-    <button type="button" class="add">Guardar</button>
+    <button type="submit" class="add" [disabled]="!form.valid">Guardar</button>
   </div>
 </form>
