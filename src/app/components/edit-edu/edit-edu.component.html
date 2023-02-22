@@ -1,15 +1,12 @@
-<form>
+<form (ngSubmit)="onSubmit()" #form="ngForm">
   <div class="edit-edu">
     <h3>Educacion</h3>
 
     <div class="edit-list-cont">
       <div class="edit-item-edit" *ngFor="let i of list">
-        <h5 class="item-title-edit">Instituto Jose Hernandez / Primario</h5>
-        <span class="item-date-edit">2010 - 2016</span>
-        <p class="item-ubi-edit">
-          B1761MPV, Constancio Vigil 3000-3198, B1761MPV Merlo, Provincia de
-          Buenos Aires
-        </p>
+        <h5 class="item-title-edit">{{i.titulo}}</h5>
+        <span class="item-date-edit">{{i.fechaInicio}} - {{i.fechaFinal}}</span>
+        <p class="item-ubi-edit">{{i.ubicacion}}</p>
         <div>
           <button type="button" class="btn-form-edit btn-delet">
             Eliminar
@@ -21,24 +18,24 @@
 
     <div class="form-control">
       <label for="edir-edu-title">Titulo y Educacion</label>
-      <input type="text" name="edir-edu-title" id="edir-edu-title" />
+      <input type="text" name="edir-edu-title" id="edir-edu-title" [(ngModel)]="edirEduTitle" required/>
     </div>
 
     <div class="form-control">
       <label for="edir-edu-date-init">Fecha de Inicio</label>
-      <input type="date" name="edir-edu-date-init" id="edir-edu-date-init" />
+      <input type="date" name="edir-edu-date-init" id="edir-edu-date-init" [(ngModel)]="fechaInicio" required/>
     </div>
 
     <div class="form-control">
       <label for="edir-edu-date-fin">Fecha de Finalizacion</label>
-      <input type="date" name="edir-edu-date-fin" id="edir-edu-date-fin" />
+      <input type="date" name="edir-edu-date-fin" id="edir-edu-date-fin" [(ngModel)]="fechaFin" required/>
     </div>
 
     <div class="form-control">
       <label for="edir-edu-ubi">Ubicacion</label>
-      <input type="text" name="edir-edu-ubi" id="edir-edu-ubi" />
+      <input type="text" name="edir-edu-ubi" id="edir-edu-ubi" [(ngModel)]="ubicacion" required/>
     </div>
 
-    <button type="button" class="add">Agregar</button>
+    <button type="submit" class="add" [disabled]="!form.valid">Agregar</button>
   </div>
 </form>
