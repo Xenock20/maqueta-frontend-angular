@@ -1,27 +1,27 @@
-<form>
+<form (ngSubmit)="onSubmit" #form="ngForm">
   <div class="edit-contact">
     <h3>Contactos</h3>
 
     <div class="form-control">
       <label for="cont-email">Correo Electronico</label>
-      <input type="email" name="cont-email" id="cont-email" />
+      <input type="email" name="cont-email" id="cont-email" [(ngModel)]="email" required/>
     </div>
 
     <div class="form-control">
       <label for="cont-ig">Instagram</label>
-      <input type="url" name="cont-ig" id="cont-ig" />
+      <input type="url" name="cont-ig" id="cont-ig" [(ngModel)]="ig" required/>
     </div>
 
     <div class="form-control">
       <label for="cont-ln">Linkedin </label>
-      <input type="url" name="cont-ln" id="cont-ln" />
+      <input type="url" name="cont-ln" id="cont-ln" [(ngModel)]="ln" required/>
     </div>
 
     <div class="form-control">
       <label for="cont-gh">GitHub</label>
-      <input type="url" name="cont-gh" id="cont-gh" />
+      <input type="url" name="cont-gh" id="cont-gh" [(ngModel)]="github" required/>
     </div>
 
-    <button type="button" class="add">Guardar</button>
+    <button type="submit" class="add" [disabled]="!form.valid">Guardar</button>
   </div>
 </form>

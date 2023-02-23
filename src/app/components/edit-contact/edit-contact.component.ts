@@ -9,7 +9,16 @@ export class EditContactComponent implements OnInit {
 
   constructor() { }
 
+  email: string = "";
+  ig: string = "";
+  ln: string = "";
+  github: string = "";
+
   ngOnInit(): void {
+  }
+
+  onSubmit(){
+
   }
 
 }
