@@ -11,3 +11,11 @@ export interface experiencia {
   fechaFinal: Date | null,
   descrip: string
 }
+
+export interface project {
+  titulo: string,
+  img: string,
+  descrip: string,
+  demo: string,
+  code: string
+}
