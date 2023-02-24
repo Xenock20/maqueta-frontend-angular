@@ -3,7 +3,7 @@
 
 :root{
   --font-color-primary: #1E0E62;
-  --font-color-secondary: #15143966;
+  --font-color-secondary: #11102e66;
   --bg-color-primary: #FFFFFF;
   --bg-color-secondary: #F1F1F1;
 }
@@ -99,7 +99,7 @@ a{
   position: relative;
   top: 60px;
   color: var(--font-color-secondary);
-  font-weight: 400;
+  font-weight: 600;
   font-size: 14px;
   line-height: 26px;
 }
@@ -327,6 +327,7 @@ footer{
   border-radius: 2px;
   font-size: 16px;
   cursor: pointer;
+  transition: all 0.2s;
 }
 
 .btn-delet{
@@ -334,7 +335,7 @@ footer{
 }
 
 .btn-edit{
-  background-color: rgb(255, 217, 0);
+  background-color: rgb(209, 178, 0);
 }
 
 .btn-delet:hover{
@@ -342,11 +343,11 @@ footer{
 }
 
 .btn-edit:hover{
-  background-color: rgb(214, 182, 0);
+  background-color: rgb(173, 147, 0);
 }
 
 .edit-item-edit{
-  background-color: #301E67;
+  background-color: #1f1f1f;
   padding: 4px;
   border-radius: 5px;
   margin: 4px 0px;
@@ -383,6 +384,7 @@ h3{
 }
 
 textarea{
+  background-color: #c0c0c0;
   max-width: 98%;
   min-width: 98%;
   min-height: 100px;
@@ -390,15 +392,16 @@ textarea{
   outline: none;
   padding: 5px;
   border-radius: 5px;
-  border: 1px solid #5B8FB9;
+  border: 1px solid #43b0f5;
 }
 
 input{
+  background-color: #c0c0c0;
   padding: 5px;
   outline: none;
   border: none;
   border-radius: 5px;
-  border: 1px solid #5B8FB9;
+  border: 1px solid #43b0f5;
 }
 
 /*Media Query*/
